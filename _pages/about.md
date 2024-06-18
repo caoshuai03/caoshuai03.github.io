@@ -18,8 +18,6 @@ redirect_from:
 <span class='anchor' id='about-me'></span>
 # 🧍️ Biography
 
-
-
 I am currently pursuing a Bachelor of Science in Information and Computing Science at the College of Science, Sichuan Agricultural University, Ya'an, Sichuan Province, China.
 
 My research interests include
