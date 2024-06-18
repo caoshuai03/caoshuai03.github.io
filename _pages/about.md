@@ -16,7 +16,7 @@ redirect_from:
 {% assign url = gsDataBaseUrl | append: "google-scholar-stats/gs_data_shieldsio.json" %}
 
 <span class='anchor' id='about-me'></span>
-# 🧍️ Biography
+# 🧍️ About Me
 
 I am currently pursuing a Bachelor of Science in Information and Computing Science at the College of Science, Sichuan Agricultural University, Ya'an, Sichuan Province, China.
 

@@ -8,7 +8,7 @@
   margin-top: 1em;
   padding-left: 1em;
   padding-right: 1em;
-  animation: intro 0.3s both;
+  animation: intro 0.4s both;
   animation-delay: 0.35s;
 
   @include breakpoint($x-large) {
@@ -61,13 +61,13 @@
     }
   }
   h1 {
-    margin-top: 1em;
+    margin-top: 1.2em;
     padding-bottom: 0.5em;
     border-bottom: 1px solid $border-color;
   }
 
   p, li, dl {
-    font-size: 1em;
+    font-size: 1.2em;
   }
 
   /* paragraph indents */
