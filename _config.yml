@@ -121,7 +121,7 @@ kramdown:
 defaults:
   # _pages
   - scope:
-      path: ""
+      path: "caoshuai03.github.io/_pages/about.md"
       type: pages
     values:
       layout: default
