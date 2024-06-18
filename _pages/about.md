@@ -31,9 +31,8 @@ My research interests include
 [//]: # (# 📝 Publications )
 
 # 💻 Internships
-- *2024.04 - 2024.07*, University of Science and Technology of China, Suzhou, China, Research Internship.
-
-My research interests are mainly in computer vision and large model fine-tuning.
+- *2024.04 - 2024.07*, University of Science and Technology of China, Suzhou.
+Research Internship.
 
 # 🎖 Honors and Awards
 - *2023.12* Sichuan Agricultural University, National Scholarship.
