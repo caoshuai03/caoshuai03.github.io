@@ -35,14 +35,14 @@ I also enjoy various activities, such as playing table tennis, working out, and 
 
 # 📝 Publications
 
-<div  class ='paper-box'><div class='paper-box-image'><div><div class="badge">ICPR 2024</div><img src='images/fig2.png' alt="sym" width="100%"></div></div>
+<div  class ='paper-box'><div class='paper-box-image'><div><div class="badge">ICPR 2024</div><img src='images/fig2.jpg' alt="sym" width="100%"></div></div>
 
-[WHDY: A wheat ear detection and counting method based on improved convolutional neural network]()\\
+[WHDY: A wheat ear detection and counting method based on improved convolutional neural network](https://caoshuai03.github.io)
 
 **Shuai Cao**, Rui Wang, Ruijie Fu, Tianhao Wu, Linhui Peng, Jianjun Wang
 
 </div>
-</div>
+
 
 # 💻 Internships
 - *2024.04 - 2024.07*, University of Science and Technology of China, Suzhou.
