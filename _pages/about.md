@@ -16,7 +16,7 @@ redirect_from:
 {% assign url = gsDataBaseUrl | append: "google-scholar-stats/gs_data_shieldsio.json" %}
 
 <span class='anchor' id='about-me'></span>
-# 🧍️ About
+# 🧍️ About Me
 
 I am a senior undergraduate student majoring in Information and Computing Science at the College of Science, Sichuan Agricultural University. I will pursue a master's degree in the [LIPLAB Laboratory](http://liplab.site/), School of Software, Nanjing University in September 2025.
 
@@ -34,11 +34,16 @@ I also enjoy various activities, such as playing table tennis, working out, and 
 [//]: # (# 📝 Publications )
 
 # 📝 Publications
-<div  class ='paper-box'><div class='paper-box-image'><div><div class="badge">ICPR 2024</div><img src='images/fig2.jpg' alt="sym" width="100%"></div></div>
 
-[WHDY: A wheat ear detection and counting method based on improved convolutional neural network]()
+<div  class ='paper-box'><div class='paper-box-image'><div><div class="badge">ICPR 2024</div><img src='images/fig2.png' alt="sym" width="100%"></div></div>
+
+[WHDY: A wheat ear detection and counting method based on improved convolutional neural network]()\\
 
 **Shuai Cao**, Rui Wang, Ruijie Fu, Tianhao Wu, Linhui Peng, Jianjun Wang
+
+</div>
+</div>
+
 # 💻 Internships
 - *2024.04 - 2024.07*, University of Science and Technology of China, Suzhou.
 
