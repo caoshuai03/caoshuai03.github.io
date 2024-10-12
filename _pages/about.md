@@ -36,13 +36,21 @@ I also enjoy various activities, such as playing table tennis, working out, and 
 # 📝 Publications
 
 <div  class ='paper-box'><div class='paper-box-image'><div><div class="badge">ICPR 2024</div><img src='images/fig2.jpg' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
 
-[WHDY: A wheat ear detection and counting method based on improved convolutional neural network](https://caoshuai03.github.io)
-
+[WHDY: A wheat ear detection and counting method based on improved convolutional neural network](https://caoshuai03.github.io) \\
 **Shuai Cao**, Rui Wang, Ruijie Fu, Tianhao Wu, Linhui Peng, Jianjun Wang
 
-</div>
+[**Project**](https://github.com/caoshuai03/YOLOv8_cs)
 
+- WHDY is a wheat ear detection model based on YOLOv8.
+- Enhanced by CBAM Attention Mechanism and WIoU Loss Function.
+- Improved with DCNv2 for Better Adaptability to Complex Backgrounds.
+- Achieved 96.1% Mean Accuracy in Wheat Spike Detection.
+
+
+</div>
+</div>
 
 # 💻 Internships
 - *2024.04 - 2024.07*, University of Science and Technology of China, Suzhou.
