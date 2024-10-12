@@ -52,7 +52,7 @@ The research group focuses on cutting-edge technology fields such as computer vi
 [//]: # (# 📝 Research)
 
 
-# 🎖 Honors and Awards
+# 🏅 Honors and Awards
 - *2024.09* Sichuan Agricultural University,Thank you for the Modern Scientist Scholarship(Only 10 people in the whole school).
 - *2024.09* Sichuan Agricultural University, Outstanding Student.
 - *2023.12* Sichuan Agricultural University, National Scholarship.
