@@ -14,3 +14,131 @@
     </div>
   </div>
 </div>
+
+<style>
+	  /* 鼠标悬停时的动画效果 */
+		.masthead__menu-item a:hover {
+			transform: scale(1.1); /* 文字放大 */
+			color: #1d8add; /* 改变文字颜色 */
+			border-radius: 4px; /* 圆角效果 */
+			border-bottom: none; /* 明确移除底部边框 */
+			text-decoration: none; /* 确保没有下划线 */
+		}
+
+		/* Optionally, you can style the links to ensure they stand out against the light blue background */
+
+
+
+  /* 确保链接内的文本也遵循这些样式 */
+  .masthead__menu-item a {
+    font-family: inherit; /* 继承父元素的字体设置 */
+    font-weight: inherit; /* 继承父元素的字体粗细 */
+    display: block; /* 让链接占据整个列表项 */
+    padding: 0.5rem 1rem; /* 给链接增加内边距 */
+    border-bottom: none; /* 明确移除底部边框 */
+  }
+	 
+
+		  /* 修改 .masthead__menu-item 的字体为 Times New Roman，并且全部加粗 */
+			.masthead__menu-item {
+				
+				font-weight: bold; /* 设置字体加粗 */
+				position: relative; /* 为了使用绝对定位的子元素 */
+			}
+			/*font-family: 'Times New Roman', Times, serif;  设置字体为 Times New Roman */
+
+
+
+
+</style>
+<!-- Masthead Section -->
+<!-- <div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <button><div class="navicon"></div></button>
+        <ul class="visible-links">
+          <li class="masthead__menu-item masthead__menu-item--lg masthead__menu-home-item"><a href="#about-me">Homepage</a></li>
+          {% for link in site.data.navigation.main %}
+            <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
+          {% endfor %}
+        </ul>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div> -->
+
+<!-- Inline CSS for quick demonstration, it's better to place this in your main.css file -->
+<!-- <style>
+
+
+  /* Ensure that inner content does not get lost in the background */
+  .masthead__inner-wrap {
+    padding: 1rem; /* 可根据需要调整 */
+  }
+
+  /* Make sure the button inside the nav also matches the background color */
+  .greedy-nav button {
+    background: none;
+    border: none;
+    color: inherit; /* 继承文本颜色 */
+  }
+
+	/* Optionally, you can style the links to ensure they stand out against the light blue background */
+  .greedy-nav a {
+    color: #000; /* 设置链接颜色，例如黑色 */
+    text-decoration: none;
+    transition: all 0.3s ease; /* 添加过渡效果以平滑变化 */
+  }
+  
+  /* When the nav is expanded or hovered, keep the same background color */
+  .greedy-nav.expanded,
+  .greedy-nav:hover {
+    background-color: #e0f7fa;
+  }
+
+
+
+  /* 确保链接内的文本也遵循这些样式 */
+  .masthead__menu-item a {
+    font-family: inherit; /* 继承父元素的字体设置 */
+    font-weight: inherit; /* 继承父元素的字体粗细 */
+    display: block; /* 让链接占据整个列表项 */
+    padding: 0.5rem 1rem; /* 给链接增加内边距 */
+    border-bottom: none; /* 明确移除底部边框 */
+  }
+		  /* 修改 .masthead__menu-item 的字体为 Times New Roman，并且全部加粗 */
+  .masthead__menu-item {
+    font-family: 'Times New Roman', Times, serif; /* 设置字体为 Times New Roman */
+    font-weight: bold; /* 设置字体加粗 */
+    position: relative; /* 为了使用绝对定位的子元素 */
+  }
+
+
+
+  /* 添加一个微妙的阴影效果，使悬停时更显立体 */
+  .masthead__menu-item a:hover::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%) scale(1.2);
+    background-color: rgba(30, 136, 229, 0.2);
+    z-index: -1;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+  }
+
+	 /* Adding a light blue background color to the masthead and site-nav */
+		.masthead, 
+		.greedy-nav {
+			background-color: #e0f7fa; /* 浅蓝色背景 */
+		}
+
+	
+
+  
+</style> -->

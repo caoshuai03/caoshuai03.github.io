@@ -1,0 +1,22 @@
+
+<div id="visit-counter" class="visit-counter">
+	<script src="https://unpkg.com/visit-monitor@latest/dist/visit-monitor.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/visit-monitor@latest/dist/visit-monitor.min.js"></script>
+	<script>
+		document.addEventListener('DOMContentLoaded', () => {
+				const monitor = new VisitMonitor({
+						apiUrl: 'https://caoshuai03.github.io/',
+				});
+
+				monitor.onUpdate((pv, uv) => {
+						const counterElement = document.getElementById('visit-counter');
+						counterElement.innerHTML = `
+								<span>访问次数：<strong>${pv}</strong></span> |
+								<span>访客数量：<strong>${uv}</strong></span>
+						`;
+				});
+
+				monitor.init();
+		});
+	</script>
+</div>
