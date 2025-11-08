@@ -24,7 +24,8 @@ group :jekyll_plugins do
 #   gem "jekyll-archives"
   gem "jekyll-feed"
   gem 'jekyll-sitemap'
-  gem 'hawkins'
+  # gem 'hawkins'  # 临时注释掉
 end
 
 gem "webrick", "~> 1.8"
+gem "logger"  # 添加这一行

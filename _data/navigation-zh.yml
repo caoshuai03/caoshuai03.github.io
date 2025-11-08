@@ -1,0 +1,30 @@
+# main links links - Chinese version
+main:
+  - title: "关于本人"
+    url: "/zh/#about-me"
+
+#  - title: "News"
+#    url: "/#-news"
+  - title: "实习经历"
+    url: "/zh/#-internships"
+  - title: "项目展示"
+    url: "/zh/#-projects"
+#
+  - title: "发表论文"
+    url: "/zh/#-publications"
+
+  - title: "荣誉奖项"
+    url: "/zh/#-honors-and-awards"
+
+  - title: "教育经历"
+    url: "/zh/#-educations"
+
+  - title: "English"
+    url: "/"
+    id: "lang-switch"
+  
+
+#  - title: "Invited Talks"
+#    url: "/#-invited-talks"
+
+

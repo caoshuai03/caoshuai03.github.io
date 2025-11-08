@@ -7,7 +7,8 @@
 github: [metadata]
 # Site Settings
 title                    : "Cao Shuai"
-description              : "Undergrad "
+description              : "Graduate Student"
+description_zh           : "研究生"
 repository               : "caoshuai03/caoshuai03"
 google_scholar_stats_use_cdn : false
 
@@ -22,9 +23,12 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 # Site Author
 author:
   name             : "Cao Shuai"
-  avatar           : "images/pic.jpg"
+  name_zh          : "曹帅"
+  avatar           : "/images/pic.jpg"
   bio              : "Sichuan Agricultural University"
-  location         : "Chengdu, Sichuan"
+  bio_zh           : "四川农业大学"
+  location         : "Nanjing, Jiangsu"
+  location_zh      : "南京，江苏"
   employer         :
   pubmed           : 
   googlescholar    :
@@ -121,7 +125,7 @@ kramdown:
 defaults:
   # _pages
   - scope:
-      path: "caoshuai03.github.io/_pages/about.md"
+      path: "_pages/about.md"
       type: pages
     values:
       layout: default

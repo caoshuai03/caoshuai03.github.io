@@ -6,6 +6,7 @@ author_profile: true
 redirect_from: 
   - /about/
   - /about.html
+lang: en
 ---
 
 {% if site.google_scholar_stats_use_cdn %}
@@ -18,7 +19,7 @@ redirect_from:
 <span class='anchor' id='about-me'></span>
 # 🧍️ About Me
 
-I am a senior undergraduate student majoring in Information and Computing Science at the College of Science, Sichuan Agricultural University. In September 2025, I will be joining the LIPLAB Laboratory at the School of Software, Nanjing University, to pursue a master's degree.
+I am a master's student at the School of Software, Nanjing University, currently studying in the LIPLAB Laboratory. I received my Bachelor's degree in Information and Computing Science from the College of Science, Sichuan Agricultural University.
 
 My research interests include:
 * Software Engineering
@@ -27,15 +28,9 @@ My research interests include:
 
 I also enjoy various activities, such as playing table tennis, working out, and listening to music. Additionally, I have experience with several different ball games. I was fortunate to grow up in the picturesque city of [Rongchang](http://www.rongchang.gov.cn/zjrc/), located in the southern part of China.
 
-[//]: # (# 🔥 News)
-
-[//]: # (- *2022.02*: &nbsp;🎉🎉 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. )
-
-[//]: # (# 📝 Publications )
-
 # 📝 Publications
 
-<div  class ='paper-box'><div class='paper-box-image'><div><div class="badge">ICPR 2024</div><img src='images/fig2.jpg' alt="sym" width="100%"></div></div>
+<div  class ='paper-box'><div class='paper-box-image'><div><div class="badge">ICPR 2024</div><img src='/images/fig2.jpg' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [WHDY: A wheat ear detection and counting method based on improved convolutional neural network](https://link.springer.com/chapter/10.1007/978-3-031-78186-5_12) \\
@@ -55,12 +50,23 @@ I also enjoy various activities, such as playing table tennis, working out, and 
 </div>
 
 # 💻 Internships
-- *2024.04 - 2024.07*, University of Science and Technology of China, Suzhou.
+- *2025.07 - 2025.09*, Jingdong (JD.com), Beijing - Backend Development Intern.
 
-The research group focuses on cutting-edge technology fields such as computer vision and 3D large models. My main research direction is fine-tuning technology for large models, covering strategies such as adapter methods and tensor decomposition.
+Worked in JD Health - Smart Medical Business Unit - Product R&D Group - Smart R&D Group. 
 
-[//]: # (# 📝 Research)
+Participated in large table archiving development, implementing time-based data archiving with scheduled tasks to optimize data storage and improve query efficiency. Gained deep understanding of Domain-Driven Design (DDD) architecture and domain division logic. 
 
+- *2024.04 - 2024.07*, University of Science and Technology of China, Suzhou - Research Intern.
+
+Worked in a research group focusing on cutting-edge technology fields such as computer vision and 3D large models.
+
+My main research direction is fine-tuning technology for large models, covering strategies such as adapter methods and tensor decomposition.
+
+<span class='anchor' id='-projects'></span>
+# 🚀 Projects
+- **[JavaLabAgent](https://github.com/caoshuai03/JavaLabAgent)** - An intelligent RAG (Retrieval-Augmented Generation) dialogue system based on Spring AI, integrated with Tongyi Qianwen large language model. Supports knowledge base management and intelligent Q&A with features including document upload, vectorization storage, intelligent retrieval, network search enhancement via Tavily, sensitive word filtering, data analysis, and user management with JWT authentication.
+
+- **[cs-ai-agent](https://github.com/caoshuai03/cs-ai-agent)** - An AI agent application built with Spring Boot, providing intelligent dialogue and emotional counseling services. Integrated with Spring AI framework, utilizing Alibaba Cloud DashScope models for AI conversations, and implementing chat record persistence management through MyBatis-Plus.
 
 # 🏅 Honors and Awards
 - *2024.09*, Sichuan Agricultural University,[Thank you for the Modern Scientist Scholarship](https://ldsrw.swjtu.edu.cn/index.htm)(Only ten people in the school won the award).

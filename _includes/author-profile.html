@@ -1,35 +1,68 @@
 {% if page.author and site.data.authors[page.author] %}
   {% assign author = site.data.authors[page.author] %}{% else %}{% assign author = site.author %}
 {% endif %}
+{% assign current_lang = page.lang | default: 'en' %}
 
 <div itemscope itemtype="http://schema.org/Person" class="profile_box">
 
   <div class="author__avatar">
-    <img src="{{ author.avatar }}" class="author__avatar" alt="{{ author.name }}">
+    {% if author.avatar %}
+      {% assign avatar_path = author.avatar | strip %}
+      {% if avatar_path contains '://' %}
+        <img src="{{ avatar_path }}" class="author__avatar" alt="{{ author.name }}">
+      {% else %}
+        {% unless avatar_path contains '/' %}
+          {% assign avatar_path = '/images/' | append: avatar_path %}
+        {% endunless %}
+        {% assign first_char = avatar_path | slice: 0 %}
+        {% if first_char != '/' %}
+          {% assign avatar_path = '/' | append: avatar_path %}
+        {% endif %}
+        <img src="{{ avatar_path }}" class="author__avatar" alt="{{ author.name }}">
+      {% endif %}
+    {% endif %}
   </div>
 
   <div class="author__content">
-    <h3 class="author__name">{{ author.name }}</h3>
-    {% if author.bio %}<p class="author__bio">{{ author.bio }}</p>{% endif %}
+    <h3 class="author__name">{% if current_lang == 'zh' and author.name_zh %}{{ author.name_zh }}{% else %}{{ author.name }}{% endif %}</h3>
+    {% if current_lang == 'zh' %}
+      {% if author.bio_zh %}
+        <p class="author__bio">{{ author.bio_zh }}</p>
+      {% elsif author.bio %}
+        <p class="author__bio">{{ author.bio }}</p>
+      {% endif %}
+    {% else %}
+      {% if author.bio %}
+        <p class="author__bio">{{ author.bio }}</p>
+      {% endif %}
+    {% endif %}
   </div>
 
   <div class="author__urls-wrapper">
     <!-- <button class="btn btn--inverse">More Info & Contact</button> -->
     <ul class="author__urls social-icons">
-      {% if site.description %}
-        <li><div style="white-space: normal; margin-bottom: 1em;">{{ site.description }}</div></li>
+      {% if current_lang == 'zh' %}
+        {% if site.description_zh %}
+          <li><div style="white-space: normal; margin-bottom: 1em;">{{ site.description_zh }}</div></li>
+        {% elsif site.description %}
+          <li><div style="white-space: normal; margin-bottom: 1em;">{{ site.description }}</div></li>
+        {% endif %}
+      {% else %}
+        {% if site.description %}
+          <li><div style="white-space: normal; margin-bottom: 1em;">{{ site.description }}</div></li>
+        {% endif %}
       {% endif %}
       {% if author.location %}
-        <li><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> {{ author.location }}</li>
+        <li><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> {% if current_lang == 'zh' %}{% if author.location_zh %}{{ author.location_zh }}{% else %}{{ author.location }}{% endif %}{% else %}{{ author.location }}{% endif %}</li>
       {% endif %}
       {% if author.employer %}
         <li><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> {{ author.employer }}</li>
       {% endif %}
       {% if author.uri %}
-        <li><a href="{{ author.uri }}"><i class="fas fa-fw fa-link" aria-hidden="true"></i> Website</a></li>
+        <li><a href="{{ author.uri }}"><i class="fas fa-fw fa-link" aria-hidden="true"></i> {% if current_lang == 'zh' %}网站{% else %}Website{% endif %}</a></li>
       {% endif %}
       {% if author.email %}
-        <li><a href="mailto:{{ author.email }}"><i class="fas fa-fw fa-envelope" aria-hidden="true"></i> Email</a></li>
+        <li><a href="mailto:{{ author.email }}"><i class="fas fa-fw fa-envelope" aria-hidden="true"></i> {% if current_lang == 'zh' %}邮箱{% else %}Email{% endif %}</a></li>
       {% endif %}
       {% if author.keybase %}
         <li><a href="https://keybase.io/{{ author.keybase }}"><i class="fas fa-fw fa-key" aria-hidden="true"></i> Keybase</a></li>
@@ -65,7 +98,7 @@
         <li><a href="https://bitbucket.org/{{ author.bitbucket }}"><i class="fab fa-fw fa-bitbucket" aria-hidden="true"></i> Bitbucket</a></li>
       {% endif %}
       {% if author.github %}
-        <li><a href="https://github.com/{{ author.github }}"><i class="fab fa-fw fa-github" aria-hidden="true"></i> Github</a></li>
+        <li><a href="https://github.com/{{ author.github }}"><i class="fab fa-fw fa-github" aria-hidden="true"></i> {% if current_lang == 'zh' %}GitHub{% else %}Github{% endif %}</a></li>
       {% endif %}
       {% if author.stackoverflow %}
         <li><a href="https://www.stackoverflow.com/users/{{ author.stackoverflow }}"><i class="fab fa-fw fa-stack-overflow" aria-hidden="true"></i> Stackoverflow</a></li>

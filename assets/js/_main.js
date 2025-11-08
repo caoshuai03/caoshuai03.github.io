@@ -28,10 +28,6 @@ $(document).ready(function(){
 
   var stickySideBar = function(){
     var show = $(".author__urls-wrapper button").length === 0 ? $(window).width() > 925 : !$(".author__urls-wrapper button").is(":visible");
-    // console.log("has button: " + $(".author__urls-wrapper button").length === 0);
-    // console.log("Window Width: " + windowWidth);
-    // console.log("show: " + show);
-    //old code was if($(window).width() > 1024)
     if (show) {
       // fix
       Stickyfill.rebuild();
@@ -94,5 +90,53 @@ $(document).ready(function(){
     closeOnContentClick: true,
     midClick: true // allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source.
   });
+
+  // Language switching functionality
+  (function() {
+    // Get current language from URL or localStorage
+    function getCurrentLang() {
+      var path = window.location.pathname;
+      if (path.startsWith('/zh/') || path === '/zh') {
+        return 'zh';
+      }
+      return localStorage.getItem('preferredLang') || 'en';
+    }
+
+    // Set language preference
+    function setLangPreference(lang) {
+      localStorage.setItem('preferredLang', lang);
+    }
+
+    // Switch language
+    function switchLanguage() {
+      var currentLang = getCurrentLang();
+      var newLang = currentLang === 'en' ? 'zh' : 'en';
+      
+      if (newLang === 'zh') {
+        window.location.href = '/zh/';
+      } else {
+        window.location.href = '/';
+      }
+      setLangPreference(newLang);
+    }
+
+    // Update language switch button text
+    function updateLangButton() {
+      var currentLang = getCurrentLang();
+      var langButton = document.getElementById('lang-switch');
+      if (langButton) {
+        langButton.textContent = currentLang === 'en' ? '中文' : 'English';
+      }
+    }
+
+    // Initialize language button on page load (inside document ready)
+    updateLangButton();
+    
+    // Add click handler to language switch button
+    $('#lang-switch').on('click', function(e) {
+      e.preventDefault();
+      switchLanguage();
+    });
+  })();
 
 });
