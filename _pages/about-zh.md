@@ -33,7 +33,7 @@ lang: zh
 <div class='paper-box-text' markdown="1">
 
 [WHDY: 基于改进卷积神经网络的小麦穗检测与计数方法](https://link.springer.com/chapter/10.1007/978-3-031-78186-5_12) \\
-**曹帅**, 王睿, 付瑞杰, 吴天昊, 彭麟惠, 王建军
+**曹帅**, 王睿, 付睿杰, 吴天昊, 彭麟惠, 王建军
 
 [**项目**](https://github.com/caoshuai03/YOLOv8_cs)
 
